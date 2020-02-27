@@ -1,8 +1,21 @@
-# Data Scientist Nanodegree
-# Supervised Learning
-## Project: Finding Donors for CharityML
+# Project: Finding Donors for CharityML
 
-### Install
+## Description
+* This project employs several supervised algorithms to model individuals' income using data collected from the 1994 U.S. Census.
+* The best candidate algorithm from preliminary results is chosen and further optimized to best model the data.
+* My goal with this implementation is to construct a model that accurately predicts whether an individual makes more than $50,000.
+* Understanding an individual's income can help a non-profit better understand how large of a donation to request, or whether or not they should reach out to begin with.
+
+## Files Used
+#### Executable File
+finding_donors.ipynb  
+visuals.py
+#### Data Files
+census.csv
+#### Presentation File
+finding_donors.html
+
+## Installation
 
 This project requires **Python 3.x** and the following Python libraries installed:
 
@@ -13,15 +26,15 @@ This project requires **Python 3.x** and the following Python libraries installe
 
 You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
 
-We recommend students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project.
+After cloning the repo, you can install all dependencies for this project with:
+```
+pip install -r requirements.txt
+```
 
-### Code
 
-Template code is provided in the `finding_donors.ipynb` notebook file. You will also be required to use the included `visuals.py` Python file and the `census.csv` dataset file to complete your work. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project. Note that the code included in `visuals.py` is meant to be used out-of-the-box and not intended for students to manipulate. If you are interested in how the visualizations are created in the notebook, please feel free to explore this Python file.
+## Run
 
-### Run
-
-In a terminal or command window, navigate to the top-level project directory `finding_donors/` (that contains this README) and run one of the following commands:
+In a terminal or command window, run one of the following commands:
 
 ```bash
 ipython notebook finding_donors.ipynb
@@ -31,9 +44,8 @@ or
 jupyter notebook finding_donors.ipynb
 ```
 
-This will open the iPython Notebook software and project file in your browser.
 
-### Data
+## Data
 
 The modified census dataset consists of approximately 32,000 data points, with each datapoint having 13 features. This dataset is a modified version of the dataset published in the paper *"Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid",* by Ron Kohavi. You may find this paper [online](https://www.aaai.org/Papers/KDD/1996/KDD96-033.pdf), with the original dataset hosted on [UCI](https://archive.ics.uci.edu/ml/datasets/Census+Income).
 
